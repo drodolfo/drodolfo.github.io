@@ -62,9 +62,6 @@ a {
     header {
         flex-direction: column;
     }
-    nav {
-        /* padding: 5% 0 0 32%; */
-    }
 }
 
 /* Encabezado  */
