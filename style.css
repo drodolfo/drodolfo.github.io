@@ -448,6 +448,7 @@ p {
     }
     .links {
         padding-right: 0;
+        font-size: 1rem;
     }
     .breaker {
         padding-top: 50px;
