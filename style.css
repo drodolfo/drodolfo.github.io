@@ -63,7 +63,7 @@ a {
         flex-direction: column;
     }
     nav {
-        padding: 5% 0 0 32%;
+        /* padding: 5% 0 0 32%; */
     }
 }
 
@@ -341,6 +341,7 @@ p {
     color: #45b29a;
     font-size: 1.7rem;
     margin: 0px auto 20px;
+    text-align: center;
 }
 
 .i-can-help p {
@@ -432,6 +433,36 @@ p {
 @media  screen and (max-width: 550px) {
     .breaker1 {
         padding-top: 30px;
+    }
+}
+
+@media  screen and (max-width: 450px) {
+    .nube2 {
+        position: absolute;
+    }
+    .nube1 {
+        width: 75px;
+    }
+    #imdiego {
+        z-index: 10;
+    }
+    .logo {
+        padding-left: 0;
+    }
+    .links {
+        padding-right: 0;
+    }
+    .breaker {
+        padding-top: 50px;
+    }
+    .what-i-do {
+        margin-top: 6rem;
+    }
+    .develop {
+        margin-top: 110px;
+    }
+    .breaker1 {
+        padding-top: 145px;
     }
 }
 
