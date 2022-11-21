@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego</title>
+
+    <!-- Hoja de stilos  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">   
+
+    <!-- Headroom Script link  -->
+    <script src="https://unpkg.com/headroom.js"></script>
+
+</head>
+<body>
+
+    <!-- Header  -->
+    <header>
+        <div class="logo">
+            <img id="image-logo" src="images/Logo.svg" alt="logo">
+        </div>
+        <nav class="links">
+            <a href="#hello" class="nav-link active">About</a>
+            <a href="#whaticando" class="nav-link">Work</a>
+            <a href="#footer" class="nav-link">Notes</a>
+        </nav>
+    </header>
+    <!-- Encabezado  -->
+    <div class="container">
+        <div class="encabezado">
+            <div class="nube1">
+                <img src="/images/cloud.svg" alt="" srcset="">
+            </div>
+            <div class="imdiego">
+                <h1 id="imdiego">I'm Diego</h1>
+                <h2>a web designer</h2>
+            </div>
+            <div class="nube2">
+                <img src="/images/cloud.svg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="master">
+        <img class="land" src="/images/land.svg" alt="" srcset="">
+    </div>
+    <!-- Hello Section  -->
+    <section id="hello">
+        <div class="container-hello">
+            <img class="logo-hello" src="/images/Logo.svg" alt="" srcset="">
+            <h1>Hi.</h1>
+            <p>I'm a web designer / developer based in Buenos Aires, Argentina. I have a passion for web design and love to create for web and mobile devices.</p>
+        </div>
+    </section>
+    <!-- Breaker  -->
+    <div class="breaker">
+        <h1 class="breaker">. . . . . . .</h1>
+    </div>
+    <!-- What i do Section  -->
+    <div class="whaticando" id="whaticando">
+        <h1 class="whaticando">What I can do.</h1>
+    </div>
+    <section class="what-i-do">
+        <div class="container-what-i-do">
+            <img class="logo-whatido" src="/images/Logo.svg" alt="" srcset="">
+            <div class="contenedor-imagen-1">
+                <div class="imagen1"></div>
+            </div>
+            <div class="container-design">
+                <h1>Design what you want.</h1>
+                <p>I like to keep it simple. My goals are to focus on typography, content an conveying the message that you want to send.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Develop Section  -->
+    <section class="develop" >
+        <div class="container-dev">
+            <div class="container-develop">
+                <h1>Develop what you need.</h1>
+                <p>I'm a developer, so i know to create your website to run across device using the latest technologies available.</p>
+            </div>
+            <div class="contenedor-imagen-2">
+                <div class="imagen2"></div>
+            </div>
+            <!-- <img class="dev-icons" src="/images/dev-icons-vert.png" alt="" srcset=""> -->
+            <img class="whatioffer" src="/images/me-dev.svg" alt="" srcset="">
+        </div>
+    </section>
+    <!-- Breaker  -->
+    <div class="breaker1">
+        <h1 class="breaker">. . . . . . .</h1>
+    </div>
+    <!-- I can Help  -->
+    <section>
+        <div class="i-can-help">
+            <h1 class="whaticando">I can help.</h1>
+            <h2 class="available">I'm currently available for freelance work.</h2>
+            <p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+        </div>
+        <p class="mail">
+            <a class="amail" href="mailto:dorodolfo@icloud.com"><img src="/images/mail.png" alt="" srcset=""> Message Me</a>
+        </p>
+    </section>
+    <!-- Footer  -->
+    <footer>
+        <div class="container-footer" id="footer">
+            <div class="row1">
+                <p>
+                    <a href="https://www.instagram.com/_diegofunk_/"> instagram</a>
+                    <a href="#"> twitter</a>
+                    <a class="hireme" href="mailto:drodolfo@icloud.com"> hire me</a>
+                </p>
+            </div>
+            <div class="row2">
+                <p>
+                    © 2022. 
+                    <a href="#"> Diego Rodolfo</a>
+                    . All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Headroom Script  -->
+   <script>
+        let header = document.querySelector('header');
+        let headroom = new Headroom(header,
+        {
+            tolerance:{down:5,up:25},
+            offset:20
+        });
+        headroom.init();
+    </script>
+
+</body>
+</html>

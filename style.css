@@ -1,0 +1,440 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "Brandom";
+    src: url("/fonts/Brandon_light.otf") format("opentype");
+}
+
+
+header {
+    background: #E0EBE8;
+    width: 100%;
+    padding: 28px 0 28px 0;
+    min-height: 72px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image-logo {
+    width: 72px;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+}
+
+.links {
+    padding-right: 15%;
+    font-family: "Brandom";
+    font-size: 1.2rem;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 20px;
+    color: #45b29a;
+    margin: 0 10px;
+}
+
+.active {
+    color: #21564b;
+}
+
+nav a:hover {
+    color: #21564b;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 5% 0 0 32%;
+    }
+}
+
+/* Encabezado  */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background: #E0EBE8;
+}
+
+.encabezado {
+    display: flex;
+    width: 70%;
+    background: transparent;
+    justify-content: space-around;
+}
+
+.nube1 {
+    margin-top: 320px;
+}
+
+.imdiego {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 150px;
+}
+
+.imdiego h1 {
+    font-family: 'My Soul', cursive;
+    font-size: 6.5rem;
+    color:#45b29a;
+    padding-bottom: 0;
+}
+
+.imdiego h2 {
+    font-family: 'Brandom';
+    color:#45b29a;
+    padding-top: 0;
+}
+
+.nube2 {
+    margin-top: 200px;
+}
+
+/* Land  */
+
+.master {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background: #E0EBE8;
+}
+
+.land {
+    width: 70%;
+    margin-top: 30px;
+}
+
+/* Hello Section  */
+
+#hello {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    height: 300px;
+}
+
+.logo-hello {
+    width: 40%;
+
+}
+
+.container-hello {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container-hello img {
+    width: 200px;
+}
+
+.container-hello h1 {
+    font-family: 'Brandom';
+    color: #45b29a;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+p {
+    font-family: 'Brandom';
+    font-size: 1.3rem;
+    color: #545454;
+    font-weight: 500;
+}
+
+/* Breaker  */
+
+.breaker {
+    display: flex;
+    justify-content: center;
+    color: #E0EBE8;
+    font-size: 1.6rem;
+    padding-top: 30px;
+}
+
+/* What i do  */
+
+.whaticando {
+    display: flex;
+    justify-content: center;
+    font-family: 'Brandom';
+    color: #21564b;
+    font-size: 3.5rem;
+    margin: 10px auto;
+}
+
+.what-i-do {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.container-what-i-do {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.container-design h1 {
+    font-family: 'Brandom';
+    color: #45b29a;
+    font-size: 1.7rem;
+}
+
+.container-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+.logo-whatido {
+    width: 20%;
+    margin-right: 30px;
+}
+
+.whatido {
+    width: 10%;
+}
+
+.imagen2 {
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    background-image: url(/images/dev-icons-vert.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: change1 15s infinite;
+}
+
+/* Move the background image out of the component. */
+
+@keyframes change1{
+    0%{
+    background-position:0px 0%;
+    }
+    25%{
+    background-position:0px 50%;
+    }
+    50%{
+    background-position:0px 100%;
+    }
+    75%{
+    background-position:0px 50%;
+    }
+    100%{
+    background-position:0px 0%;
+    }
+    }
+
+@keyframes change2{
+    0%{
+    background-position:0px 0%;
+    }
+    25%{
+    background-position:0px 40%;
+    }
+    50%{
+    background-position:0px 100%;
+    }
+    75%{
+    background-position:0px 40%;
+    }
+    100%{
+    background-position:0px 0%;
+    }
+ }
+
+/* Section Develop  */
+.develop {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 200px;
+    margin: 30px auto;
+    padding-top: 20px;
+}
+
+.container-dev {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-develop h1 {
+    font-family: 'Brandom';
+    color: #45b29a;
+    font-size: 1.7rem;
+}
+
+.container-develop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 30px;
+}
+
+.whatioffer {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.dev-icons {
+    margin-left: 30px;
+    width: 10%;
+}
+
+.imagen1 {
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    background-image: url(/images/design-icons-vert.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: change2 15s infinite;
+}
+
+/* I can Help  */
+
+.i-can-help {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 10px auto 40px;
+}
+
+.available {
+    font-family: 'Brandom';
+    color: #45b29a;
+    font-size: 1.7rem;
+    margin: 0px auto 20px;
+}
+
+.i-can-help p {
+    font-family: 'Brandom';
+    font-size: 1.3rem;
+    color: #545454;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+}
+
+.mail {
+    margin: 40px auto 40px;
+    width: 150px;
+    background:#45b29a;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.amail {
+    color: #21564b;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: .4rem;
+}
+
+/* Footer  */
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E0EBE8;
+    height: 150px;
+}
+
+.row1 p {
+    font-family: 'Brandom';
+    font-size: 1.7rem;
+    word-spacing: 30px;
+    margin: 0 auto 10px;  
+}
+
+.row1 a {
+    color: #21564b;
+}
+
+.row2 p {
+    color: #21564b;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #545454;
+    margin: 10px auto 10px;
+}
+
+.row2 a {
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #545454;
+}
+
+.hireme {
+    word-spacing: 0;
+}
+
+/* Headroom */
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width:900px){
+    .develop, .what-i-do, .container-hello {
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    .breaker1 {
+        padding-top: 30px;
+    }
+}
+
+
+
+
